@@ -31,12 +31,14 @@ local hacks = {
     Aimbot = false,
     Triggerbot = false,
     ESP = false,
-    TeamCheck = false  -- Default to true for safety
+    TeamCheck = true  -- Default to true for safety
 }
 
 local buttons = {}
 buttons.Aimbot = createButton("Aimbot", 150)
+buttons.Triggerbot = createButton("Triggerbot", 190)
 buttons.ESP = createButton("ESP", 230)
+buttons.TeamCheck = createButton("Team Check", 270)
 
 -- Initialize team check button state
 buttons.TeamCheck.Text = "Team Check: " .. (hacks.TeamCheck and "ON" or "OFF")
